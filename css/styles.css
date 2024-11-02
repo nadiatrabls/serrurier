@@ -1,0 +1,90 @@
+/* Header background with image */
+header.bg-image {
+    background-image: url('../img/serrurier.jpg'); /* Mettre l'image appropriée */
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    position: relative;
+}
+
+header .container {
+    position: relative;
+    z-index: 2;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay sombre */
+    z-index: 1;
+}
+.navbar-brand {
+    color:white;
+    
+    z-index: 1;
+}
+
+
+.step {
+    font-size: 24px;
+    line-height: 80px;
+}
+
+.bg-dark {
+    background-color: rgba(0,0,0,0.7);
+}
+
+.testimonial {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.bg-primary {
+    background-color: #0056b3 !important; /* Bleu primaire remplaçant l'orange */
+}
+
+.text-primary {
+    color: #0056b3 !important;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+/* Témoignages clients satisfaits */
+.testimonial {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.bi-star-fill {
+    font-size: 1.5rem;
+}
+.card {
+    border: none;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+}
+
+.card img {
+    border: 3px solid #e9ecef;
+}
+
+.card h5 {
+    font-weight: 600;
+}
+
+.card p {
+    color: #6c757d;
+}
+.contact{
+    z-index: 2;
+}
